@@ -17,7 +17,7 @@
     ></script>
     <style>
       html {
-        cursor: url("./images/undefined\ -\ Imgur.png"), auto;
+        cursor: url("./images/undefined\ -\ Imgur\ \(1\).png"), auto;
       }
     </style>
 
@@ -338,8 +338,13 @@
           <p>Designed and Developed by Het Patel</p>
         </div>
         <div class="copyrights">
-          <p>Copyright © 2025 Het</p>
+          <p>Copyright © <span id="year"></span> Het</p>
         </div>
+
+        <script>
+          document.getElementById("year").textContent =
+            new Date().getFullYear();
+        </script>
       </div>
     </div>
   </body>
